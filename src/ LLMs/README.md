@@ -8,12 +8,27 @@ This repository contains Python scripts used in the "LLMs in Practice" workshop.
 - pip (Python package installer)
 - Access to OpenAI API (for cloud examples)
 - Local inference tools (e.g., Ollama) for local examples
+- For LLM models: 
+    - 🔽 1. Download a .gguf LLM (e.g. TinyLlama)
+    - Go to:
+     👉 https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF
+    - Download one of these files
+    - `tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf` (for low memory usage)
+    - 🔽 2. Download a `.gguf` LLM (e.g. Mistral)
+    - Go to:
+     👉 https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/blob/main/mistral-7b-instruct-v0.1.Q4_K_M.gguf
+    - Download one of these files (smallest first):
+    - `mistral-7b-instruct-v0.1.Q4_K_M.gguf`
+    - 📁 3. Move It to Your Project Folder
+      - Place the downloaded file in the same directory as your `ai_agents_*.py` script or specify the full path.
 
 Install the required libraries:
 
 ```bash
 pip install -r requirements.txt
 ```
+
+
 
 ## Libraries Used
 

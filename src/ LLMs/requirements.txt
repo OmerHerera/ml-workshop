@@ -1,5 +1,3 @@
-openai
-langchain
-ollama
-transformers
-torch
+langchain>=0.1.14
+langchain-community>=0.0.28
+llama-cpp-python>=0.2.24
