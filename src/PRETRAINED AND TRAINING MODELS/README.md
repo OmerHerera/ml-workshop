@@ -27,6 +27,6 @@ python traing_model.py
 
 ## Dependencies
 
-- `transformers
-- `scikit-learn 
+- `transformers`
+- `scikit-learn`
 - `torch`
