@@ -40,6 +40,19 @@ In separate terminals or background processes:
 
 ✅ Step 1: Create a Virtual Environment (recommended for macOS Homebrew)
 
+```bash
+./bootstrap.sh
+```
+
+- If you get a “permission denied” error, they can still fix it with:
+
+```bash
+chmod +x bootstrap.sh
+
+```
+
+Or
+
 ```python
 python3 -m venv venv
 source venv/bin/activate

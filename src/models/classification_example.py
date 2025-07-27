@@ -4,6 +4,9 @@
 # The model can then predict whether new, unseen emails are spam.
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
+def predict_spam(input):
+  return "🥰 NOT SPAM" if input == 0 else "😠 SPAM"
+  
 
 # Sample emails
 emails = [
@@ -23,6 +26,9 @@ model = LogisticRegression()
 model.fit(X, labels)
 
 # Predict on a new message
-new_email = ["Free vacation! Click now!"]
+new_email = ["reschedule"]
+new_email2 = ["Free vacation! Click now!"]
 new_features = vectorizer.transform(new_email)
-print(model.predict(new_features))  # Output: [1] → spam
+new_features2 = vectorizer.transform(new_email2)
+print(predict_spam(model.predict(new_features)))  # Output: [0] → not spam
+print(predict_spam(model.predict(new_features2)))  # Output: [1] → spam

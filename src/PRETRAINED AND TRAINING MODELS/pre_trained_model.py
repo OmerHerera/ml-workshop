@@ -5,9 +5,11 @@ classifier = pipeline("sentiment-analysis")
 
 # Run inference
 result = classifier("I love using pretrained models with Hugging Face!")
+print("****************************")
 print("Sentiment Analysis Result:")
 print(result)
 
 result = classifier("I hate using pretrained models with Hugging Face!")
+print("****************************")
 print("Sentiment Analysis Result:")
 print(result)

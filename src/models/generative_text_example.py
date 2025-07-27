@@ -12,4 +12,6 @@ generator = pipeline("text-generation", model="gpt2")
 # The model predicts the next token, then the next, and so on, until it reaches the max length or an end-of-sequence token.
 # Finally, the tokens are converted back into human-readable text using the tokenizer.
 result = generator("Once upon a time,", max_length=50, truncation=True)
+print("----------------------------------------------------------------------------------------------------------")
 print(result[0]["generated_text"])
+print("----------------------------------------------------------------------------------------------------------")
