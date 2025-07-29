@@ -74,5 +74,5 @@ def predict_sentiment(text):
     return "🥰 Positive" if output > 0.5 else "😠 Negative"
 
 # --- Try It Out ---
-print(predict_sentiment("I would marry this potato"))
+print(predict_sentiment("Great experience eating this potato"))
 print(predict_sentiment("Tastes like betrayal and chalk"))
